@@ -40,10 +40,21 @@ public class MainActivity extends AppCompatActivity {
         String textToScan = editText.getText().toString();
         Log.d("WordCounter", "Counting words in : '" + textToScan + "'");
 
-        int numberOfWords = WordCounter.getCount(textToScan);
+//        int numberOfWords = WordCounter.getCount(textToScan);
+//
+//        textView.setText(Integer.toString(numberOfWords) + " words entered");
 
-        textView.setText(Integer.toString(numberOfWords) + " words entered");
+       Intent intent = new Intent(this, WordcountActivity.class);
+//        Answers answers = new Answers();
+//
+//        String randomAnswer = answers.getRandomAnswer();
+//
+//        intent.putExtra("answer", randomAnswer);
+
+//        startActivity(intent);
+
     }
+
 
     public void onConcordanceButtonClick(View view) {
         String textToScan = editText.getText().toString();

@@ -6,4 +6,6 @@
     <string name="count_words_text">Count the words</string>
     <string name="about_page">About</string>
     <string name="settings_page">Settings</string>
+    <string name="wordcount" />
+    <string name="concordance" />
 </resources>

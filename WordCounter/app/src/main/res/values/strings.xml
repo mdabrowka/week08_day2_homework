@@ -4,4 +4,6 @@
     <string name="num_words">words.</string>
     <string name="get_concordance">Concordance</string>
     <string name="count_words_text">Count the words</string>
+    <string name="about">about</string>
+    <string name="settings">settings</string>
 </resources>

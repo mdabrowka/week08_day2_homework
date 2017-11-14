@@ -6,4 +6,7 @@
     <string name="count_words_text">Count the words</string>
     <string name="about">about</string>
     <string name="settings">settings</string>
+    <string name="about_page">This is the about page</string>
+    <string name="settings_activity">Feature coming soon.</string>
+    <string name="settings_page">Feature coming soon</string>
 </resources>

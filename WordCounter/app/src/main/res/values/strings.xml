@@ -4,6 +4,6 @@
     <string name="num_words">words.</string>
     <string name="get_concordance">Concordance</string>
     <string name="count_words_text">Count the words</string>
-    <string name="about_page">This is the about page</string>
-    <string name="settings_page">Feature coming soon</string>
+    <string name="about_page">About</string>
+    <string name="settings_page">Settings</string>
 </resources>

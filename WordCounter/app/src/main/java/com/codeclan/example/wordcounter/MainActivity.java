@@ -45,13 +45,19 @@ public class MainActivity extends AppCompatActivity {
 //        textView.setText(Integer.toString(numberOfWords) + " words entered");
 
        Intent intent = new Intent(this, WordcountActivity.class);
-//        Answers answers = new Answers();
+
 //
-//        String randomAnswer = answers.getRandomAnswer();
+        int numberOfWords = WordCounter.getCount(textToScan);
+
+        textView.setText(Integer.toString(numberOfWords) + " words entered");
+
+
+
+//
 //
 //        intent.putExtra("answer", randomAnswer);
 
-//        startActivity(intent);
+        startActivity(intent);
 
     }
 

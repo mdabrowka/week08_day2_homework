@@ -31,34 +31,24 @@ public class MainActivity extends AppCompatActivity {
         editText = (EditText)findViewById(R.id.text_to_scan);
         buttonWordCount = (Button)findViewById(R.id.button_scan);
         buttonConcordance = (Button)findViewById(R.id.button_concordance);
-        textView = (TextView)findViewById(R.id.text_result);
+        //textView = (TextView)findViewById(R.id.text_result);
 
         wordCounter = new WordCounter();
     }
 
     public void onWordCountButtonClick(View view) {
-        String textToScan = editText.getText().toString();
-        Log.d("WordCounter", "Counting words in : '" + textToScan + "'");
-
-//        int numberOfWords = WordCounter.getCount(textToScan);
-//
-//        textView.setText(Integer.toString(numberOfWords) + " words entered");
+        //String textToScan = editText.getText().toString();
+        //Log.d("WordCounter", "Counting words in : '" + textToScan + "'");
 
        Intent intent = new Intent(this, WordcountActivity.class);
+       String textToScan = editText.getText().toString();
+       int numberOfWords = WordCounter.getCount(textToScan);
 
-//
-        int numberOfWords = WordCounter.getCount(textToScan);
+       textView.setText(Integer.toString(numberOfWords) + " words entered");
 
-        textView.setText(Integer.toString(numberOfWords) + " words entered");
-
-
-
-//
-//
-//        intent.putExtra("answer", randomAnswer);
+      intent.putExtra("answer", numberOfWords);
 
         startActivity(intent);
-
     }
 
 
